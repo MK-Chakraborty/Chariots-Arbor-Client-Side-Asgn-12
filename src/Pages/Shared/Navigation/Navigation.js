@@ -8,7 +8,7 @@ const Navigation = () => {
             <Container fluid className="px-0">
                 <Navbar bg="dark" variant="dark" expand="lg" className="bg-gradient">
                     <Container>
-                        <Navbar.Brand href="#home"><i className="fas fa-chess-king"></i> Chariots-Arbor</Navbar.Brand>
+                        <Navbar.Brand><NavLink to="/" className="text-decoration-none text-white"><i className="fas fa-chess-king"></i> Chariots-Arbor</NavLink></Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="ms-auto">

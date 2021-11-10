@@ -5,7 +5,7 @@ import { useHistory } from 'react-router';
 const Product = ({ product }) => {
     const history = useHistory();
     const handleClick = () => {
-        history.push('/purchase');
+        history.push(`/purchase/${product._id}`);
     }
     return (
         <Card style={{ width: '24rem', margin: '20px 0px' }}>
