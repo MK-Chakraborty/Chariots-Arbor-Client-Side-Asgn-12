@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "name": "Angela Bing",
+        "email": "angela@bing.com",
+        "date": "11/1012021",
+        "msg": "On the Review page, users should be able to add a review and that review will appear on the home age. Right now you will see every review on the home page. There is no limit on the numbers of reviews or the order of the review.",
+        "star": 3
+    },
+    {
+        "id": 2,
+        "name": "Bengamin Carter",
+        "email": "bengamin@carter.com",
+        "date": "11/1012021",
+        "msg": "On the Review page, users should be able to add a review and that review will appear on the home age. Right now you will see every review on the home page. There is no limit on the numbers of reviews or the order of the review.",
+        "star": 5
+    }
+]

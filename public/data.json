@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "model": "GLA SUV",
+        "brand": "Mercedes",
+        "cost": "36,230",
+        "img": "https://i.ibb.co/M9Rkqs3/2021-GLE-SUV-CT-1-2-2-DR.png",
+        "desp": "More than a commanding view of the road ahead, the new second-generation GLA offers a rewarding view of what's next. It not only puts more sport in compact SUVs, it puts more you.Within a more nimble length, the new GLA gives you more space to ride, more room to shop, stow and be spontaneous. A power liftgate and 40/20/40 rear seats welcome your gear.A pair of 7-inch screens help keep you informed, entertained and in command. One's for gauges, one's a touchscreen. Available 10.25-inch versions let you visualize, and customize, even more.A spectrum of finishes is just the start of GLA style. The AMG Line adds sporty pedals, seats and steering wheel. Available 64-color ambient lighting lets you choose the hues that suit your mood. Show how you roll on 18, 19 or 20-inch wheels. The AMG Line includes a chrome grille, plus AMG® styling and wheels. Or take it the dark side with the Night Package. Even a compact Mercedes-Benz goes big on luxury. Front seats are power with memory. Climate control is dual-zone and double-filtered. Opt for the power Panorama roof and even the sky feels bigger."
+    },
+    {
+        "id": 2,
+        "model": "GLB SUV",
+        "brand": "Mercedes",
+        "cost": "38,600",
+        "img": "https://i.ibb.co/k5Yp6b7/AMG-GLE-COUPE-CT.png",
+        "desp": "Has any SUV ever fit so much into such a compact package? Seating for up to seven. Rugged in all the right places. Looks to match. So smart it can carry on a conversation, and carry out your wishes. And all priced to please. Standard dual 7-inch or available 10.25-in screens vividly present reconfigurable instruments and multimedia. The central display is a touchscreen, so it's easy to change settings and customize themes. Suit your state of mind, or create a new atmosphere, anytime. Available 64-color LED ambient lighting includes multi-hue motifs, and soothing themes that cycle through colors. Supportive seats are appointed in a spectrum of upholstery options. Trim options include two natural-grain woods. Aluminum dash and door accents evoke the grab bars of the iconic G-Class. Crisp, upright lines maximize cabin space and minimize overhangs. Even sportier AMG Line and blackout Night Package options each offer a pair of wheel designs, for a total of six choices from 18 to 20 inches. It can take you new places, or make old favorite roads feel fresh. It can take up to six of your friends, or make easy work of the weekend chores. And wherever you take it, it'll outperform to make every mile memorable."
+    },
+    {
+        "id": 3,
+        "model": "GLC SUV",
+        "brand": "Mercedes",
+        "cost": "43,200",
+        "img": "https://i.ibb.co/Xp9jjTB/AMG-GT.png",
+        "desp": "The GLC aims to keep raising benchmarks for SUVs: Its athletic, aerodynamic body envelops an elegantly high-tech cabin. LED lighting and polished details express the brilliance within. Spacious and sensuous, the acclaimed GLC cabin rewards your touch on every surface. Enjoy a choice of natural-grain woods, genuine aluminum switches, and a spectrum of hand-fitted upholstery. A 10.25-inch central touchscreen responds to your touch on the console, the steering wheel or itself. A reconfigurable 12.3-inch digital instrument cluster is available, too. Fashionable is also functional in a GLC. The roomy, 40/20/40-split rear seat power-folds down. The power liftgate opens to reveal a spacious cargo area with underfloor storage standard. The AMG Line pumps up the muscular GLC shape with 19-inch AMG wheels and chiseled bodywork. The Night Package adds gloss black accents. And both offer 20-inch wheel upgrades. The turbo GLC 300 and GLC 300 4MATIC are energetic and energy-conscious. They embrace your passion for driving and the road with composure and confidence."
+    },
+    {
+        "id": 4,
+        "model": "GLC Coupe",
+        "brand": "Mercedes",
+        "cost": "51,650",
+        "img": "https://i.ibb.co/WWG9D2T/Background-1.png",
+        "desp": "Traction meets attraction: SUV capability, coupe agility, and bold Mercedes-Benz style. Along with four doors, a power liftgate, and turbo power driving all four 19-inch or 20-inch wheels. Agile, efficient 4MATIC® continually sends torque to the wheels that can use it best. It can add confidence on slippery surfaces, and driving fun on a winding dry road. A 255-hp turbo-4 delivers big thrust without big thirst. It'll rush to 60 in 6.2 seconds. Direct Injection and multispark ignition can self-tune in milliseconds, to keep performance on peak. DYNAMIC SELECT lets you match the GLC Coupe's driving style to your own. Five modes from ECO to Sport+ to Individual reprofile the 9G-TRONIC transmission, throttle, steering and more. Refined in the rough, the 4-wheel multilink suspension can instantly firm up in corners. Standard 19-inch wheels offer two designs, with four more 20-inch options. You don't count doors to define a Mercedes-Benz coupe. Character is what counts. Agile and sleek, the GLC Coupe puts the stance in substance. LED headlamps and three-dimensional LED taillights add to its shine."
+    },
+    {
+        "id": 5,
+        "model": "GLE SUV",
+        "brand": "Mercedes",
+        "cost": "54,750",
+        "img": "https://i.ibb.co/jrDgShN/Background-2.png",
+        "desp": "The luxury SUV that started the segment continues to lead the way. The roomiest GLE yet, it's also more agile and aerodynamic. And from LED headlamps to a bold yet elegant cabin, it wraps first-in-class tech in finely tailored style. From its iconic Star to its broad rear shoulders, the GLE shows its well-toned muscle on every surface. Standard and available wheels range from 19 to 22 inches, depending on model. AMG Line Exterior and Night Package options further amplify their athleticism. Attention to aerodynamic detail helps make the GLE more spacious and more sleek. Subtle spoilers ahead of each tire, around the rear window and built into the taillamps reduce noise and fuel consumption without spoiling the good looks. Beautiful by day, the GLE cabin grows even more captivating when night falls. Standard 64-color LED ambient lighting lets you create an atmosphere to suit your mood. You can even call up motifs that use multiple hues together or in dynamic sequence. Fully digital instruments visually float on a linear-themed dash. Flowing door-to-door and into a console integrating prominent twin grab handles, the wide trim insert is available in a variety of woods, sleek aluminum, or woven metal."
+    },
+    {
+        "id": 6,
+        "model": "GLE Coupe",
+        "brand": "Mercedes",
+        "cost": "76,500",
+        "img": "https://i.ibb.co/5v6Z7px/Background-3.png",
+        "desp": "The soul of a sports car, the skills of an SUV, and the elegance of a coupe reunite not just for a new generation, but a regeneration of every measure of Mercedes-AMG passion. Electrified torque whisks you ahead amid a range of driving wizardry. In an old mill in 1967, two automotive engineers with a passion for motorsports began turning Mercedes-Benz sedans into winning racecars. Today, as the performance division of Mercedes-Benz, AMG continues to create victory on the track and desire on the streets of the world. Every Mercedes-AMG vehicle is the product of craftsmen, designers and engineers who live to test limits, and for a singular goal: Driving Performance. A Mercedes-AMG engine only starts with the state of the art. From there, everything from fuel pressure to exhaust routing is developed to quicken, heighten and intensify its response, and yours. A new generation of performance is electrified, much like the Formula 1® championship-winning AMG racecars. Twin-scroll turbocharging teams with a 48-volt EQ Boost that can add 184 lb-ft of electric torque. A 429-hp turbo inline-6, further boosted by an electric compressor, takes the GLE 53 to 60 in 5.2 seconds. A handcrafted 603-hp AMG biturbo V8 catapults the GLE 63 S in just 3.7"
+    },
+    {
+        "id": 7,
+        "model": "Mercedes-Maybach GLS SUV",
+        "brand": "Mercedes",
+        "cost": "160,500",
+        "img": "https://i.ibb.co/kDZkCv3/Background-4.png",
+        "desp": "Glimmering grille blades and a standup Star tempt the eye. Exquisite materials greet your senses. Innovative luxuries meet them. Comfort is its mission, the product of confidence with a commanding view. The GLS 600 delivers an experience from first glance to full immersion in its lavish luxuries. Power seats front and rear offer lounge-like adjustment, a spa-like menu of massages. Innovation exists purely to serve your comfort, safety and convenience via multiple senses. A virtual voice assistant listens to serve you. Lighting and fragrance subtly soothe you. The digital cockpit responds to your natural spoken requests, or via touchscreen and tablet. An Executive Climate System tends to passengers individually. Music and soft lighting can accompany a massage at any seat. Immense biturbo power is precisely metered to each wheel. Fully active suspension eyes the road, acts in the moment. Torque and tenacity seamlessly collaborate to deliver calm composure. A range of driving modes reflects the breadth of talents within. On any road, or even off, E-ACTIVE BODY CONTROL acts to optimize driving feel, yet minimize the motions felt by passengers."
+    },
+    {
+        "id": 8,
+        "model": "G-Class SUV",
+        "brand": "Mercedes",
+        "cost": "131,750",
+        "img": "https://i.ibb.co/TkBBGtZ/Background-5.png",
+        "desp": "Within the timeless body is a state-of-the-art cockpit, with standard and available technologies from dual 12.3-inch displays, intuitive steering-wheel Touch Controls, and voice control for the navigation, audio and numerous comfort features. Before it was an icon, it was a workhorse. A job that needed to be done. The first to arrive. The last to leave. Hope, delivered in a reinforced steel box. But before everything, it was a simple idea: There’s no such thing as too far. Change the cabin to suit your mood, or start a new one: An elaborate multizone LED ambient lighting system lets you choose among 64 colors, as well as a variety of motifs featuring two, five, or even slowly changing hues. Classically shaped lamps feature brilliant advances. Intelligent LED headlamps adapt to darkness, curves and vehicles ahead. LED Daytime Running Lamps encircle each unit. Even the fender-top turn signals and taillamps employ 100% LEDs. A G-Class looks out for its occupants with a suite of safety advancements. Standard driver assists include Blind Spot Assist, Active Lane Keeping Assist, Active Distance Assist DISTRONIC cruise control, and Speed Limit Assist."
+    },
+    {
+        "id": 9,
+        "model": "S-Class Sedan",
+        "brand": "Mercedes",
+        "cost": "184,900",
+        "img": "https://i.ibb.co/pn5MzhL/Background-6.png",
+        "desp": "Grille blades shimmer. Pillar emblems glow. Paintwork and chrome accentuate flowing lines and a confident stance. The cabin is the work of 16,000 needles in unison, and several pairs of expert hands. From a warm welcome to a hot stone massage, every moment in a Maybach is time well spent. Legroom is expansive, with room to recline as you enjoy the extensive amenities. Technological firsts quickly feel like second nature. An Organic LED (OLED) haptic touchscreen, 3D digital instruments and extensive LED illumination engage with your senses. The digital cockpit responds to your natural spoken requests, or via touchscreens and a tablet. Climate and seating comforts tend to passengers individually. Music, lighting, massage and aromatherapy rival your favorite spa. Majestic presence and palatial comfort do not overshadow the driving joys of poise and power. In fact, its strength, agility and surefootedness are the very sources of its composed comfort. Twin-turbo torque is apportioned to all four wheels with constantly calculated precision. When the weather changes, or the road turns, 4MATIC® sends power to the wheels that can use it best."
+    },
+    {
+        "id": 10,
+        "model": "C-Class Cabriolet",
+        "brand": "Mercedes",
+        "cost": "54,700",
+        "img": "https://i.ibb.co/g6KdccM/Background-7.png",
+        "desp": "The 2020 C-Class Cabriolet shows an ever-fresh face to the sun. Four of you can take in the sky. Ride in coupelike comfort under a rich fabric top. And feel a unique heritage of motoring into tomorrow. Standard LED headlamps are eye-catching by day, and brighten the night more like natural daylight. The available LED Intelligent Light System adapts for curves and vehicles ahead. The soft top is finely tailored in three colors. Stow it, and a ring of satin aluminum frames the artful cabin. Raise it, and expansive windows keep the cabin feeling bright. Hand-fitted upholstery and four wood trims let you suit the 4-seat cabin to your style. Customize it any time with standard 64-color LED ambient lighting. In under 20 seconds, one button hides the 3-layer acoustic fabric soft top beneath a sculpted rear deck. Just as easily, it returns to envelop you in serene comfort, even in winter. Nine 18-inch and 19-inch wheel designs include five AMG® designs that pair with the aero-aggressive styling of the AMG Line. The Night Package option adds gloss black accents. Smartphone-like pads let you scroll, swipe and select features and settings with your hands on the wheel. Shift paddles are standard. A sporty flat-bottom wheel comes with the AMG Line."
+    },
+    {
+        "id": 11,
+        "model": "AMG GT",
+        "brand": "Mercedes",
+        "cost": "130,700",
+        "img": "https://i.ibb.co/hXSFtHf/Background-8.png",
+        "desp": "If the Mercedes-AMG GT is a reinvention of the pure sports car, there's only one way to make it even purer: Open it up. With the GT roadsters, the handcrafted AMG performance that's born on the track has been unleashed into an open sky. In an old mill in 1967, two engineers with a passion for motorsports began turning Mercedes-Benz sedans into winning racecars. Today, AMG continues to create victory on the track and desire on the streets of the world. Every Mercedes-AMG vehicle is the product of craftsmen, designers, engineers and racers who live for a singular goal: Driving Performance. A Mercedes-AMG engine starts with the state of the art. Everything from fuel pressure to exhaust routing is developed to quicken, heighten and intensify its response, and yours. From patented processes to cut friction to a new generation of electrified performance, AMG technology is fueled by its racing success. Handcrafted AMG 4.0L V8s place their twin turbos between their banks for quicker response. Dry sump design moves their oil supply aside, for lower engine mounting. In the AMG GT, now with 523 hp, 60 mph arrives in 3.7 seconds. In the 550-hp AMG GT C, just 3.6 seconds. Forged aluminum dominates the 4-wheel double-wishbone AMG RIDE CONTROL suspension with 3-stage damping. Coil-overs at the rear are hub-mounted for extreme precision. The GT C adds active rear-wheel steering. AMG DYNAMIC SELECT lets you dial in the throttle, shifting, chassis, exhaust and more."
+    },
+    {
+        "id": 12,
+        "model": "EQS Sedan",
+        "brand": "Mercedes",
+        "cost": "102,310",
+        "img": "https://i.ibb.co/P9Xbtv7/Background.png",
+        "desp": "It's like no electric car you've seen. And it thrusts the Three-Pointed Star into a new tomorrow. Personally attentive. Seamlessly responsive. Uniquely imaginative. More than a new era of motoring, the EQS is here to make every day a fresh start for your own future. Technology is tailored to serve every passenger in the spacious EQS cabin. It listens, and can tell who's speaking. Learns your face and fingerprint. It adapts to your habits, attends to your comfort, and anticipates your needs like no EV, or any car not born under the Star. Multiple screens unify under a single 56-inch span of high-tech glass. Standard on the EQS 580, the MBUX Hyperscreen uses artificial intelligence to bring features and commands to the surface on the go, a zero-layer menu concept for unmatched ease of use. As many as 350 sensors maintain virtual vigilance on you, your passengers, and the world around your EQS. From standard state-of-the-art driving assists to extensive EV-specific protective measures, it's how the EQS looks out for you that'll make you'll look forward to every drive. The advanced electric powertrain inspires a new era in style, but the EQS body is designed around you. Taut like an archer's bow, the shape optimizes cabin comfort and aerodynamic efficiency. Elegantly futuristic details captivate the eye, yet the wind barely notices the EQS sneaking through."
+    }
+]
