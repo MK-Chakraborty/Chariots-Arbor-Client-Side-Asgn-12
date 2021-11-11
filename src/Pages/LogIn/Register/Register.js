@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Col, Container, Form, Row, Button } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { Col, Container, Form, Row, Button, Alert } from 'react-bootstrap';
+import { NavLink, useHistory } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
 const Register = () => {
     const [loginData, setLoginData] = useState({});
-    const {user, registerUser} = useAuth();
+    const {user, registerUser, authError} = useAuth();
+    const history = useHistory();
 
     const handleOnBlur = e => {
         const field = e.target.name;
@@ -21,12 +22,12 @@ const Register = () => {
             alert('Your Password Didn\'t Matched.');
             return;
         }
-        registerUser(loginData.email, loginData.password);
+        registerUser(loginData.email, loginData.password, loginData.userName, loginData.phone, history);
         e.preventDefault();
     }
 
     return (
-        <Container className="p-5">
+        <Container className="p-3">
             <Row className="py-5">
                 <Col xs={12} sm={12} md={{ span: 10, offset: 1 }} lg={{ span: 8, offset: 2 }} className="border border-3 border-dark p-5 rounded-3 bg-dark bg-gradient text-white">
                     <h1><i className="fas fa-chess-king"></i> Chariots-Arbor</h1>
@@ -53,6 +54,15 @@ const Register = () => {
                             </Form.Text>
                         </Form.Group>
 
+                        <Form.Group className="mb-3" controlId="formBasicPhone">
+                            <Form.Label>Contact Number</Form.Label>
+                            <Form.Control
+                                type="tel"
+                                name="phone"
+                                onBlur={handleOnBlur}
+                                placeholder="Contact No." />
+                        </Form.Group>
+
                         <Form.Group className="mb-3" controlId="formBasicPassword">
                             <Form.Label>Password</Form.Label>
                             <Form.Control
@@ -72,6 +82,8 @@ const Register = () => {
                         </Form.Group>
 
                         <h6>Already Registered? Please Log In. <NavLink to="/login" className="text-white lh-lg">Log In</NavLink></h6>
+                        {user?.email && <Alert variant="success">Account Created Successfully!</Alert>}
+                        {authError && <Alert variant="danger">{authError}</Alert>}
                         <Button variant="outline-light" type="submit">
                             Register
                         </Button>
