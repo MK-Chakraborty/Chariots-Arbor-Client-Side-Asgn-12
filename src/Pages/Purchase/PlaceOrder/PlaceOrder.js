@@ -2,16 +2,17 @@ import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
 import { useForm } from "react-hook-form";
+import useAuth from '../../../hooks/useAuth';
 
 
 const PlaceOrder = () => {
     const { id } = useParams();
+    const { user } = useAuth();
 
     // get current date
     const today = new Date().toLocaleDateString();
 
-    const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    const { register, handleSubmit, reset } = useForm();
 
     const [product, setProduct] = useState([]);
     useEffect(() => {
@@ -19,6 +20,23 @@ const PlaceOrder = () => {
             .then(res => res.json())
             .then(data => setProduct(data));
     }, [id])
+
+    const onSubmit = data => {
+        fetch('http://localhost:5000/order', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(res => res.json())
+            .then(result => {
+                if (result.insertedId) {
+                    alert('Congratulation!!! Your Payment Is Complete. Your Vehical Will be delivered at your provided address within 15 days (including ownership registration process). Thank You!');
+                    reset();
+                }
+            });
+    };
 
     return (
         <Container fluid className="px-0">
@@ -32,12 +50,14 @@ const PlaceOrder = () => {
                     <Col>
                         <h3 className="pt-5 pb-3 fw-light border-0 border-bottom border-3 border-dark">Provide Necessary Informations to Buy This Car</h3>
                         <form onSubmit={handleSubmit(onSubmit)} className="d-flex flex-column">
-                            <input {...register("fullName", { required: true, maxLength: 100 })} value="" placeholder="Full Name" className="border-0 border-bottom border-3 fs-6 fw-bold py-3" />
-                            <input type="email" {...register("email", { required: true })} value="" placeholder="Email" className="border-0 border-bottom border-3 fs-6 fw-bold py-3" />
+                            <input {...register("fullName", { maxLength: 100 })} value={user.displayName} placeholder="Full Name" className="border-0 border-bottom border-3 fs-6 fw-bold py-3" />
+                            <input type="email" {...register("email")} value={user.email} placeholder="Email" className="border-0 border-bottom border-3 fs-6 fw-bold py-3" />
                             <input type="text" {...register("date")} value={today} placeholder="Date" className="border-0 border-bottom border-3 fs-6 fw-bold py-3" />
-                            <input {...register("message", { maxLength: 300 })} placeholder="Special Requirements" className="border-0 border-bottom border-3 fs-6 fw-bold py-3" />
+                            <input type="tel" {...register("phone", { required: true })} placeholder="Contact Number" className="border-0 border-bottom border-3 fs-6 fw-bold py-3" />
+                            <input type="text" {...register("address", { required: true })} placeholder="Delivery Address" className="border-0 border-bottom border-3 fs-6 fw-bold py-3" />
+                            <input {...register("message", { maxLength: 300 })} placeholder="Custom Requirements" className="border-0 border-bottom border-3 fs-6 fw-bold py-3" />
                             <input {...register("transactionID", { required: true, maxLength: 100 })} placeholder="Transaction ID" className="border-0 border-bottom border-3 fs-6 fw-bold py-3" />
-                            <input {...register("serviceId", { maxLength: 300 })} value={id} placeholder="Service Id" className="border-0 border-bottom border-3 fs-6 fw-bold py-3" />
+                            <input {...register("productId", { maxLength: 300 })} value={id} placeholder="Service Id" className="border-0 border-bottom border-3 fs-6 fw-bold py-3" />
                             <input type="submit" value="Place Order" className="bg-dark bg-gradient text-white fs-5 fw-bold rounded mt-3 py-3 w-50 mx-auto" />
                         </form>
                     </Col>

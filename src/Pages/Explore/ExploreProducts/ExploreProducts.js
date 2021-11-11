@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Spinner } from 'react-bootstrap';
 import Product from '../../Home/Products/Product/Product';
 
 const ExploreProducts = () => {
@@ -8,7 +8,9 @@ const ExploreProducts = () => {
         fetch('http://localhost:5000/products')
         .then(res => res.json())
         .then(data => setProducts(data));
-    },[])
+    },[]);
+
+    if(!products?.length) {return <Spinner animation="border" />}
 
     return (
         <Container className="my-5">

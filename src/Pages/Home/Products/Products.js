@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Spinner } from 'react-bootstrap';
 import Product from './Product/Product';
 
 const Products = () => {
@@ -10,6 +10,7 @@ const Products = () => {
         .then(data => setProducts(data));
     },[])
 
+    if(!products?.length) {return <Spinner animation="border" />}
     const bestProducts = products.filter(product => product.id < 7);
 
     return (
