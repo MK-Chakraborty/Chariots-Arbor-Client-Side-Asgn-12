@@ -19,10 +19,10 @@ const DashboardDrawer = () => {
     let { path, url } = useRouteMatch();
 
     const drawer = (
-        <div className="bg-dark bg-gradient py-5">
+        <div className="bg-dark bg-gradient py-5 h-100">
             <h1 className="text-white"><i className="far fa-user-circle"></i></h1>
-            <h4 className="text-white">{user.displayName}</h4>
-            <Link to={`${url}`} className="text-decoration-none text-white"><h5 className="border-0 border-top border-3 border-light pt-3">Home</h5></Link><br />
+            <h4 className="text-white pb-3">{user.displayName}</h4>
+            <Link to={`${url}`} className="text-decoration-none text-white"><h5 className="border-0 border-top border-3 border-light pt-3">Dashboard</h5></Link><br />
             <Link to={`${url}/payment`} className="text-decoration-none text-white"><h5 className="border-0 border-top border-3 border-light pt-3">Payment</h5></Link><br />
             <Link to={`${url}/myOrders`} className="text-decoration-none text-white"><h5 className="border-0 border-top border-3 border-light pt-3">My Orders</h5></Link><br />
             <Link to={`${url}/review`} className="text-decoration-none text-white"><h5 className="border-0 border-top border-bottom border-3 border-light pt-3 pb-4">Review</h5></Link><br />
