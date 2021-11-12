@@ -13,6 +13,7 @@ import DashboardHome from '../DashbordHome/DashboardHome';
 import Payment from '../Payment/Payment';
 import MyOrders from '../MyOrders/MyOrders';
 import Review from '../Review/Review';
+import MakeAdmin from '../MakeAdmin/MakeAdmin';
 
 const DashboardDrawer = () => {
     const { user, logOut } = useAuth();
@@ -26,6 +27,7 @@ const DashboardDrawer = () => {
             <Link to={`${url}/payment`} className="text-decoration-none text-white"><h5 className="border-0 border-top border-3 border-light pt-3">Payment</h5></Link><br />
             <Link to={`${url}/myOrders`} className="text-decoration-none text-white"><h5 className="border-0 border-top border-3 border-light pt-3">My Orders</h5></Link><br />
             <Link to={`${url}/review`} className="text-decoration-none text-white"><h5 className="border-0 border-top border-bottom border-3 border-light pt-3 pb-4">Review</h5></Link><br />
+            <Link to={`${url}/makeAdmin`} className="text-decoration-none text-white"><h5 className="border-0 border-top border-bottom border-3 border-light pt-3 pb-4">Make Admin</h5></Link><br />
             <Button onClick={logOut} variant="dark" className="bg-gradient fs-5">Log Out</Button>
         </div>
     )
@@ -34,7 +36,7 @@ const DashboardDrawer = () => {
         <div>
             <h1 className="fs-1 fw-light lh-lg mt-5 mb-0 border-0 border-bottom border-dark border-3">DASHBOARD</h1>
 
-            <Container fluid className="px-0">
+            <Container fluid className="ps-0">
                 <Row>
                     <Col xs={12} sm={12} md={4} lg={3}>
                         {drawer}
@@ -52,6 +54,9 @@ const DashboardDrawer = () => {
                             </Route>
                             <Route path={`${path}/review`}>
                                 <Review></Review>
+                            </Route>
+                            <Route path={`${path}/makeAdmin`}>
+                                <MakeAdmin></MakeAdmin>
                             </Route>
                         </Switch>
                     </Col>
