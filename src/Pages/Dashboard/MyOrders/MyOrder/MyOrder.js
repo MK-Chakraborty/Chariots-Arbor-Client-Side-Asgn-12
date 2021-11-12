@@ -6,7 +6,7 @@ const MyOrder = ({ order }) => {
     const id = order.productId;
     const [product, setProduct] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${id}`)
+        fetch(`https://gentle-crag-50031.herokuapp.com/products/${id}`)
             .then(res => res.json())
             .then(data => setProduct(data));
     }, [id]);
@@ -14,7 +14,7 @@ const MyOrder = ({ order }) => {
     const handleClick = (orderId) => {
         const proceed = window.confirm('Are you sure, You wnat to cancel your order?');
         if (proceed) {
-            fetch(`http://localhost:5000/order/${orderId}`, {
+            fetch(`https://gentle-crag-50031.herokuapp.com/order/${orderId}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

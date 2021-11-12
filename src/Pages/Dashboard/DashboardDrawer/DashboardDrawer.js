@@ -15,6 +15,7 @@ import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import AdminRoute from '../../LogIn/AdminRoute/AdminRoute';
 import ManageOrder from '../ManageOrder/ManageOrder';
 import AddProduct from '../AddProduct/AddProduct';
+import ManageProducts from '../ManageProducts/ManageProducts';
 
 const DashboardDrawer = () => {
     const { user, logOut, admin } = useAuth();
@@ -71,6 +72,9 @@ const DashboardDrawer = () => {
                             </AdminRoute>
                             <AdminRoute path={`${path}/addProduct`}>
                                 <AddProduct></AddProduct>
+                            </AdminRoute>
+                            <AdminRoute path={`${path}/manageProduct`}>
+                                <ManageProducts></ManageProducts>
                             </AdminRoute>
                             <AdminRoute path={`${path}/makeAdmin`}>
                                 <MakeAdmin></MakeAdmin>

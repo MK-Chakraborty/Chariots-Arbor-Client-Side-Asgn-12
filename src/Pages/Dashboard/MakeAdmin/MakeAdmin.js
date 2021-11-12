@@ -11,7 +11,7 @@ const MakeAdmin = () => {
 
     const authorizeAdimn = e => {
         const user = { email };
-        fetch('http://localhost:5000/users', {
+        fetch('https://gentle-crag-50031.herokuapp.com/users', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

@@ -10,7 +10,7 @@ const Review = () => {
 
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://gentle-crag-50031.herokuapp.com/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -34,7 +34,7 @@ const Review = () => {
                 <input {...register("msg", { maxLength: 600 })} placeholder="Feedback" className="border-0 border-bottom border-3 fs-6 fw-bold py-3" />
                 <input type="number" {...register("star", { maxLength: 1 })} placeholder="Rate 1 2 3 4 5" className="border-0 border-bottom border-3 fs-6 fw-bold py-3" />
                 <input type="text" {...register("date")} value={today} placeholder="Date" className="border-0 border-bottom border-3 fs-6 fw-bold py-3" />
-                <input type="submit" value="Place Order" className="bg-dark bg-gradient text-white fs-5 fw-bold rounded mt-3 py-3 w-50 mx-auto" />
+                <input type="submit" value="Submit" className="bg-dark bg-gradient text-white fs-5 fw-bold rounded mt-3 py-3 w-50 mx-auto" />
             </form>
         </Container>
     );
