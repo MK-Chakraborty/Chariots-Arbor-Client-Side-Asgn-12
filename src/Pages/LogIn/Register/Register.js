@@ -13,7 +13,6 @@ const Register = () => {
         const value = e.target.value;
         const newLoginData = { ...loginData };
         newLoginData[field] = value;
-        console.log(newLoginData);
         setLoginData(newLoginData);
     }
 
@@ -22,7 +21,7 @@ const Register = () => {
             alert('Your Password Didn\'t Matched.');
             return;
         }
-        registerUser(loginData.email, loginData.password, loginData.userName, loginData.phone, history);
+        registerUser(loginData.email, loginData.password, loginData.userName, history);
         e.preventDefault();
     }
 
@@ -52,15 +51,6 @@ const Register = () => {
                             <Form.Text className="text-muted">
                                 We'll never share your email with anyone else.
                             </Form.Text>
-                        </Form.Group>
-
-                        <Form.Group className="mb-3" controlId="formBasicPhone">
-                            <Form.Label>Contact Number</Form.Label>
-                            <Form.Control
-                                type="tel"
-                                name="phone"
-                                onBlur={handleOnBlur}
-                                placeholder="Contact No." />
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="formBasicPassword">

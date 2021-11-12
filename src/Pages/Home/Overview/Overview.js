@@ -14,7 +14,7 @@ const Overview = () => {
             <h3 className="mb-5"><span className="pe-1">U</span><span className="pe-1">s</span><span className="pe-1">e</span><span className="pe-1">r</span> <span className="border-0 border-bottom border-3 border-dark">REVIEW</span></h3>
             <div className="d-flex flex-wrap justify-content-around">
                 {
-                    reviews.map(review => <Review key={review.id} review={review}></Review>)
+                    reviews.map(review => <Review key={review._id} review={review}></Review>)
                 }
             </div>
         </Container>

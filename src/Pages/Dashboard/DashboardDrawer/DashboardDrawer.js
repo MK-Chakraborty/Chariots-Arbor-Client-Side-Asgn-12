@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
-import { Offcanvas, Button, Container, Row, Col } from 'react-bootstrap';
+import React from 'react';
+import { Button, Container, Row, Col } from 'react-bootstrap';
 import useAuth from '../../../hooks/useAuth';
 import {
-    BrowserRouter as Router,
     Switch,
     Route,
     Link,
-    useParams,
     useRouteMatch
 } from "react-router-dom";
 import DashboardHome from '../DashbordHome/DashboardHome';
@@ -14,20 +12,31 @@ import Payment from '../Payment/Payment';
 import MyOrders from '../MyOrders/MyOrders';
 import Review from '../Review/Review';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
+import AdminRoute from '../../LogIn/AdminRoute/AdminRoute';
 
 const DashboardDrawer = () => {
-    const { user, logOut } = useAuth();
+    const { user, logOut, admin } = useAuth();
     let { path, url } = useRouteMatch();
 
     const drawer = (
         <div className="bg-dark bg-gradient py-5 h-100">
             <h1 className="text-white"><i className="far fa-user-circle"></i></h1>
             <h4 className="text-white pb-3">{user.displayName}</h4>
+
             <Link to={`${url}`} className="text-decoration-none text-white"><h5 className="border-0 border-top border-3 border-light pt-3">Dashboard</h5></Link><br />
-            <Link to={`${url}/payment`} className="text-decoration-none text-white"><h5 className="border-0 border-top border-3 border-light pt-3">Payment</h5></Link><br />
-            <Link to={`${url}/myOrders`} className="text-decoration-none text-white"><h5 className="border-0 border-top border-3 border-light pt-3">My Orders</h5></Link><br />
-            <Link to={`${url}/review`} className="text-decoration-none text-white"><h5 className="border-0 border-top border-bottom border-3 border-light pt-3 pb-4">Review</h5></Link><br />
-            <Link to={`${url}/makeAdmin`} className="text-decoration-none text-white"><h5 className="border-0 border-top border-bottom border-3 border-light pt-3 pb-4">Make Admin</h5></Link><br />
+            {admin ? <>
+                <Link to={`${url}/manageOrders`} className="text-decoration-none text-white"><h5 className="border-0 border-top border-3 border-light pt-3">Manage Orders</h5></Link><br />
+                <Link to={`${url}/addProduct`} className="text-decoration-none text-white"><h5 className="border-0 border-top border-3 border-light pt-3">Add Product</h5></Link><br />
+                <Link to={`${url}/makeAdmin`} className="text-decoration-none text-white"><h5 className="border-0 border-top border-3 border-light pt-3">Make Admin</h5></Link><br />
+                <Link to={`${url}/manageProduct`} className="text-decoration-none text-white"><h5 className="border-0 border-top border-bottom border-3 border-light pt-3 pb-4">Manage Products</h5></Link><br />
+            </> :
+                <>
+                    <Link to={`${url}/payment`} className="text-decoration-none text-white"><h5 className="border-0 border-top border-3 border-light pt-3">Payment</h5></Link><br />
+                    <Link to={`${url}/myOrders`} className="text-decoration-none text-white"><h5 className="border-0 border-top border-3 border-light pt-3">My Orders</h5></Link><br />
+                    <Link to={`${url}/review`} className="text-decoration-none text-white"><h5 className="border-0 border-top border-bottom border-3 border-light pt-3 pb-4">Review</h5></Link><br />
+                </>
+            }
+
             <Button onClick={logOut} variant="dark" className="bg-gradient fs-5">Log Out</Button>
         </div>
     )
@@ -55,9 +64,9 @@ const DashboardDrawer = () => {
                             <Route path={`${path}/review`}>
                                 <Review></Review>
                             </Route>
-                            <Route path={`${path}/makeAdmin`}>
+                            <AdminRoute path={`${path}/makeAdmin`}>
                                 <MakeAdmin></MakeAdmin>
-                            </Route>
+                            </AdminRoute>
                         </Switch>
                     </Col>
                 </Row>
