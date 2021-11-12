@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
-import mbLogo from '../../../../images/mb_Logo.png';
+import mbLogo from '../../../../images/mb_Logo.png'
 
-const MyOrder = ({ order }) => {
+const ManageOrder = ({order}) => {
     const id = order.productId;
     const [product, setProduct] = useState([]);
     useEffect(() => {
@@ -12,7 +12,7 @@ const MyOrder = ({ order }) => {
     }, [id]);
 
     const handleClick = (orderId) => {
-        const proceed = window.confirm('Are you sure, You wnat to cancel your order?');
+        const proceed = window.confirm('Are you sure, You wnat to cancel this order?');
         if (proceed) {
             fetch(`https://gentle-crag-50031.herokuapp.com/order/${orderId}`, {
                 method: 'DELETE'
@@ -20,13 +20,12 @@ const MyOrder = ({ order }) => {
                 .then(res => res.json())
                 .then(result => {
                     if (result.deletedCount) {
-                        alert('Your Order Cancelled. You will get your refaund within 15 days. Thank You!');
+                        alert('An order gets deleted.');
                         window.location.reload()
                     }
                 });
         }
     }
-
     return (
         <div className="card mb-3" style={{ maxWidth: "540px" }}>
             <div className="row g-0">
@@ -50,4 +49,4 @@ const MyOrder = ({ order }) => {
     );
 };
 
-export default MyOrder;
+export default ManageOrder;

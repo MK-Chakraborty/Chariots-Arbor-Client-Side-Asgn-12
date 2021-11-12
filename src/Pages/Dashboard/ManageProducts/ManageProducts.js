@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Spinner } from 'react-bootstrap';
 import ManageProduct from './ManageProduct/ManageProduct';
 
 const ManageProducts = () => {
@@ -9,6 +10,8 @@ const ManageProducts = () => {
         .then(res => res.json())
         .then(data => setProducts(data));
     },[])
+
+    if(!products?.length) {return <Spinner animation="border" />}
 
     return (
         <div>

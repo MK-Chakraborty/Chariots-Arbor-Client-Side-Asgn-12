@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Chariots-Arbor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Site: (https://niche-assignment-12.web.app).
 
-## Available Scripts
+## About Chariots-Arbor
 
-In the project directory, you can run:
+This site is about an online car showroom. Users can see and place orders for their desired car. General users and admin have different workplaces. Some key points about this site are presented below.
 
-### `npm start`
+## Key Points
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* The home page has six sections. On the home page products and reviews are coming from the database. UI is designed by React-Bootstrap.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* This site has two types of users which are admins and general users. Admins and general users have different dashboards. 
 
-### `npm test`
+* CURD operations can be performed via this site. Both admins and general users can perform CURD operations from their dashboards. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* This site has a user login and registration system. The authentication system is backed by Firebase password authentication.
 
-### `npm run build`
+* If a general user goes to the place order page he/she needs to fill up a form as order information. The order information will get posted to the database.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* After login a general user will be able to access the dashboard. He/she will be able to make payment (coming soon), manage own orders, and provide feedback about this service. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* A general user will not get access to the admin controls in the dashboard.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* After login an admin will be able to access the dashboard. He/she will be able to manage all orders, add a new product, make admin, and manage products. 
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Mongodb atlas is used as the database.

@@ -2,21 +2,22 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 
 const ManageProduct = ({ product }) => {
-    // const handleClick = (orderId) => {
-    //     const proceed = window.confirm('Are you sure, You wnat to cancel your order?');
-    //     if (proceed) {
-    //         fetch(`https://gentle-crag-50031.herokuapp.com/`, {
-    //             method: ''
-    //         })
-    //             .then(res => res.json())
-    //             .then(result => {
-    //                 if (result.deletedCount) {
-    //                     alert('Your Order Cancelled. You will get your refaund within 15 days. Thank You!');
-    //                     window.location.reload()
-    //                 }
-    //             });
-    //     }
-    // }
+
+    const handleClick = (productId) => {
+        const proceed = window.confirm('Are you sure, You wnat to delete this product?');
+        if (proceed) {
+            fetch(`https://gentle-crag-50031.herokuapp.com/products/${productId}`, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(result => {
+                    if (result.deletedCount) {
+                        alert('A product gets deleted.');
+                        window.location.reload()
+                    }
+                });
+        }
+    }
     return (
         <div className="card mb-3" style={{ maxWidth: "540px" }}>
             <div className="row g-0">
@@ -29,7 +30,7 @@ const ManageProduct = ({ product }) => {
                         <h6 className="text-start">By, {product.brand}</h6>
                         <h6 className="text-start">Cost: {product.cost} $</h6>
 
-                        <Button variant="dark" className="bg-gradient float-end mb-3">Declare Unavailable</Button>
+                        <Button onClick={() => handleClick(product._id)} variant="dark" className="bg-gradient float-end mb-3">Declare Unavailable</Button>
                     </div>
                 </div>
             </div>
